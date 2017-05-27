@@ -26,9 +26,3 @@ If ($RetrieveType -eq "First"){
         New-MailboxExportRequest -ContentFilter {(Received -ge $RetrieveDate)} -Mailbox $User -FilePath $ExportPath\$User-Second.pst
     }
 }
-
-
-<#
-New-MailboxExportRequest -ContentFilter {(Received -lt '05/01/2017')}  -Mailbox hearnsa -FilePath \\localhost\exports\hearnsa.pst
-New-MailboxExportRequest -ContentFilter {(Received -ge '05/01/2017')} -Mailbox hearnsa -FilePath \\localhost\exports\hearnsa.pst
-#>
